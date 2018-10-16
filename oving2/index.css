@@ -1,0 +1,27 @@
+#setning{
+	width: 20em;
+	height: 1.8em;
+	border: solid;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.happy0{
+	background-color: grey;
+}
+
+.happy1{
+	background-color: darkblue;
+}
+
+.happy2{
+	background-color: blue;
+}
+
+.happy3{
+	background-color: aquamarine;
+}
+
+.happy4{
+	background-color: cyan;
+}
