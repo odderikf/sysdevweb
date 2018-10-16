@@ -61,5 +61,8 @@ typings/
 .next
 
 
-#personal:
+# personal:
 
+# private
+HelloWorldNews/
+experimental/
