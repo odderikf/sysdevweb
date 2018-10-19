@@ -7,9 +7,16 @@
   },
   "dependencies": {
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.0.4",
+    "react-dom": "^16.5.2",
+    "react-scripts": "^2.0.5",
     "react-simplified": "^1.5.1",
+    "react": "^16.5.2",
     "bootstrap": "^4.1.3"
+  },
+  "peerDependencies": {
+    "jquery": "1.9.1",
+    "ajv": "6.5.4",
+    "popper.js": "^1.14.4"
   },
   "browserslist": [
     ">0.2%",

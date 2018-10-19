@@ -1,0 +1,45 @@
+.deleteButton{
+    color: red;
+}
+#root{
+    align-self: center;
+    margin: 1em;
+}
+
+.two-column{
+    display: inline-grid;
+    grid-template:
+            "left right";
+    grid-gap: 6em;
+    height: available;
+    width: available;
+}
+
+.two-column-left{
+    grid-area: left;
+}
+.two-column-left-dominant{
+    width: 50vw;
+}
+.two-column-right{
+    grid-area: right;
+}
+
+#fixed_top{
+    position: fixed;
+    width: 90vw;
+    z-index: 100;
+
+}
+
+.nav-link:active{
+    color: cadetblue;
+}
+
+.navbar{
+    margin-bottom: 1vh;
+}
+
+#root *{
+    margin: 02px;
+}
