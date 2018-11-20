@@ -4,3 +4,6 @@
 [submodule "oving9"]
 	path = oving9
 	url = ./oving9/
+[submodule "HelloWorldNews"]
+	path = HelloWorldNews
+	url = ./HelloWorldNews/

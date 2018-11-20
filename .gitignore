@@ -62,8 +62,7 @@ typings/
 
 
 # personal:
-.idea/workspace.xml
+.idea/*
 
 # private
-HelloWorldNews/
 experimental/
