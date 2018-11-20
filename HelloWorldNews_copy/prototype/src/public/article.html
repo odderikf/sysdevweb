@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="nyhetsartikkel">
+    <title> bollebaking </title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+</head>
+<body>
+    <div class="root" id="midtdiv">
+        <div class="topnav">
+            <ul>
+                <!--<li id="logo"> <a class="active" href="index.html"> <img id="logobildet" src="logo.png" alt='til hovedsiden' ></a></li>-->
+                <li class="topnavtitle"> <a id="sidenavn" href="index.html">HELLO WORLD NEWS</a></li>
+                <li> <a href="nyNyhet.html" > Ny nyhet </a></li>
+                <li> <a href="index.html"> kategori 1 </a></li>
+                <li> <a href="index.html" > kategori 2 </a></li>
+                <li> <a href="index.html" > kategori 3 </a></li>
+            </ul>
+        </div>
+        <div id='header'></div>
+        <div class='artikkel'>
+            <p></p><br/>
+            <h1> Bollebaking </h1>
+            <div class="polaroid">
+                <div id="imgcontainer">
+                    <img src='artikkel.jpg' alt='ferdigbakte boller' class="responsive"/>
+                </div> <!-- slutt img -->
+                <div class="container">
+                    <figcaption> ferdigbakte boller</figcaption>
+                </div> <!-- slutt container -->
+            </div> <!-- slutt polaroid -->
+            <p>	Lorem ipsum dolor sit amet, nec at minim dicant impetus, porro dolore evertitur mei ut, admodum iracundia id nam. Quo habeo homero concludaturque ex. Debet lobortis pri id, erat quaerendum ut sea. In vivendum platonem consectetuer eum, unum assentior mei cu. Voluptatum eloquentiam reformidans sit ea, id accusamus constituam vim.
+
+                Mei at mundi adolescens, soluta mentitum ea mea, etiam adipisci deterruisset ei cum. Nam scribentur comprehensam ut, eum labore quaestio ad. Amet voluptatibus ea vix, usu choro menandri mandamus an. Justo gubergren an has, ea nostro sapientem evertitur vix, vide diceret ut pri.
+
+                Dolor euripidis deseruisse pro ut, eum cu officiis similique, quo ei debet definitiones. Id modo soleat mea, eu mei idque saepe dictas, illum propriae oporteat vis te. Vitae viderer vix cu. Per no eros altera, qualisque splendide id pro. Sed eu aliquip salutandi scriptorem, feugiat phaedrum ei per.
+
+                At has iudicabit neglegentur, mei stet assum euripidis te. At interesset temporibus eos, albucius pertinax suscipiantur ex eum. Quem vero veritus ad vim, cu tantas tacimates dissentias pri. His ne nonumy fuisset, impedit nonumes ea mei, sea decore tacimates ei. Ignota quidam epicuri et vix.
+
+                His ex facilis offendit elaboraret, vel suas sonet eruditi te, tale recusabo gubergren id mei. Dictas abhorreant eos an. Vim ex eius facer platonem, discere placerat omittantur mei at, his cu veri sanctus luptatum. Ei mel ponderum eleifend postulant. Tota nostrud vis ne. Omnis iudicabit ad has.</p>
+            <figcaption> Av <span id="navn">Espen Askeladden</span> <br/> Dato: 20.22.1943</figcaption>
+            <div class="rating">
+                <span id='1'>☆</span id='2'><span id='3'>☆</span><span id='4'>☆</span><span id='5'>☆</span><span id='6'>☆</span>
+            </div> <!-- slutt rating -->
+            <div>
+                <button> <a href='editNyhet.html'> endre artikkel </a></button>
+            </div>
+            <hr/>
+            <div class="commentContainer">
+                <div class="submitComment">
+                    <div class="inputNickDiv">
+                        <input type="text" name="commentNick" placeholder="Nick" required value="" id="inputNick">
+                    </div>
+                    <div class="inputCommentDiv">
+                        <textarea rows="4" cols="50" name="commentText" placeholder="Text here" required value="" id="inputComment"></textarea>
+                    </div>
+                    <div class="submitCommentButtonDiv">
+                        <button value="Submit" id="submitCommentButton">Submit</button>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="singleComment">
+                        <p name="commentNick">NICK HERE</p>
+                        <p name="commentText">COMMENT HERE</p>
+                    </div>
+                    <div class="singleComment">
+                        <p name="commentNick">NICK HERE</p>
+                        <p name="commentText">COMMENT HERE</p>
+                    </div>
+                    <div class="singleComment">
+                        <p name="commentNick">NICK HERE</p>
+                        <p name="commentText">COMMENT HERE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Contact us: odderikf@stud.ntnu.no</p>
+        </footer>
+    </div>
+    <template>
+        <div name="comment" class="singleComment">
+            <p name="commentNick">NICK HERE</p>
+            <p name="commentText">COMMENT HERE</p>
+        </div>
+    </template>
+    <script src="comments.js"></script>
+</body>
+</html>

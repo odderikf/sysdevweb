@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <link rel="stylesheet" href="/frontpage.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+</head>
+<body>
+    <div class="root">
+        <div class="topnav">
+            <ul>
+                <!--<li id="logo"> <a class="active" href="index.html"> <img id="logobildet" src="logo.png" alt='til hovedsiden' ></a></li>-->
+                <li class="topnavtitle"> <a id="sidenavn" href="frontpage.html">HELLO WORLD NEWS</a></li>
+                <li> <a href="nyNyhet.html" > Ny nyhet </a></li>
+                <li> <a href="#kategori1"> Spisskammeret </a></li>
+                <li> <a href="#kategori2" > Java </a></li>
+                <li> <a href="#kategori3" > Javascript </a></li>
+            </ul>
+        </div>
+        <div class="marquee">
+            <img id="livefeedSymbol" src="livefeed.png"/>
+            <div class="midmarquee">
+                <div class="innermarquee">
+                    <p id="livefeedTitler"> <a href='./artikkel_EM.html'>LIVE: BURN</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="article_list">
+            <div class="ArticleElement">
+                <img class="listicon" src="https://res.cloudinary.com/norgesgruppen/image/upload/c_pad,b_white,f_auto,h_320,q_50,w_320/v1517566217/Product/5419.jpg"/>
+                <h1 class="headline"><a href="./artikkel_EM.html">Headline Has Arrived</a></h1>
+                <p class="categoryname">Category</p>
+                <p clasS="datename">27.06.2011</p>
+                <p class="likescount">20</p>
+                <img class="likeicon" src="https://openclipart.org/download/213865/thumbs_up.svg"/>
+                <p class="commentscount">20</p>
+                <img class="commenticon" src="https://banner2.kisspng.com/20180314/qlq/kisspng-speech-balloon-scalable-vector-graphics-text-clip-cartoon-text-bubble-5aa97a7addee92.7086759615210563789091.jpg "/>
+            </div>
+            <div class="ArticleElement">
+                <img class="listicon" src="https://res.cloudinary.com/norgesgruppen/image/upload/c_pad,b_white,f_auto,h_320,q_50,w_320/v1517566217/Product/5419.jpg"/>
+                <h1 class="headline"><a href="./artikkel_EM.html">Headline Has Arrived</a></h1>
+                <p class="categoryname">Category</p>
+                <p clasS="datename">27.06.2011</p>
+                <p class="likescount">20</p>
+                <img class="likeicon" src="https://openclipart.org/download/213865/thumbs_up.svg"/>
+                <p class="commentscount">20</p>
+                <img class="commenticon" src="https://banner2.kisspng.com/20180314/qlq/kisspng-speech-balloon-scalable-vector-graphics-text-clip-cartoon-text-bubble-5aa97a7addee92.7086759615210563789091.jpg "/>
+            </div>
+            <div class="ArticleElement">
+                <img class="listicon" src="https://res.cloudinary.com/norgesgruppen/image/upload/c_pad,b_white,f_auto,h_320,q_50,w_320/v1517566217/Product/5419.jpg"/>
+                <h1 class="headline"><a href="./artikkel_EM.html">Headline Has Arrived</a></h1>
+                <p class="categoryname">Category</p>
+                <p clasS="datename">27.06.2011</p>
+                <p class="likescount">20</p>
+                <img class="likeicon" src="https://openclipart.org/download/213865/thumbs_up.svg"/>
+                <p class="commentscount">20</p>
+                <img class="commenticon" src="https://banner2.kisspng.com/20180314/qlq/kisspng-speech-balloon-scalable-vector-graphics-text-clip-cartoon-text-bubble-5aa97a7addee92.7086759615210563789091.jpg "/>
+            </div>
+        </div>
+        <footer>
+            <p>Contact us: odderikf@stud.ntnu.no</p>
+        </footer>
+    </div>
+</body>
+</html>

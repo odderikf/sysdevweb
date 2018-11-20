@@ -1,0 +1,195 @@
+/* common */
+
+body{
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: serif;
+    font-size: 150%;
+    color: black;
+    background-color: #EFF8FB;
+}
+
+#navn {
+    color: #0000FF;
+}
+
+
+.artikkel{
+    margin-left: 25%;
+    width: 49%;
+    /*margin-right: 25%;*/
+    background-color: white;
+    padding: 1%;
+    height: fit-content;
+}
+
+div.polaroid {
+    max-width: 100.2%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+#imgcontainer{
+    overflow:hidden;
+}
+
+.responsive {
+    max-width: 100%;
+
+}
+
+div.container {
+    text-align: left;
+    padding: 10px 20px;
+}
+
+figcaption{
+    font-size: 80%;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+/*STJERNER*/
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
+
+.marquee {
+    background-color: red;
+    display: flex;
+}
+.midmarquee{
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.innermarquee  {
+}
+
+#livefeedTitler{
+
+    -webkit-animation: marquee 40s linear infinite;
+    -o-animation: marquee 40s linear infinite;
+    animation: marquee 40s linear infinite;
+    color: blue;
+    padding-left: 100vw;
+    margin: 8px;
+    margin-left: 0;
+}
+
+
+#livefeedSymbol{
+    display: inline-block;
+    max-height: 6vh;
+    max-width: 6vh;
+    margin-left: 2px;
+}
+
+@media(min-width: 1000px) {
+
+    @keyframes marquee {
+        0%   { transform: translate(0, 0); }
+        100% { transform: translate(-100%, 0); }
+    }
+}
+
+footer{
+    margin: 10vh 2px 2px;
+    border: solid black;
+}
+footer p{
+    margin: 20px;
+}
+/*COMMENTS*/
+.submitComment{
+    width: 100%;
+    border: 1px solid black;
+    width: 400px;
+    padding: 5px;
+    margin: 5px;
+}
+.submitComment div{
+    width: fit-content;
+    padding: 5px;
+    text-align: center;
+}
+
+.comments{
+    /*
+    float:left;
+    */
+}
+
+.singleComment{
+
+
+    border: 1px solid black;
+    width: 400px;
+    height: fit-content;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+/* frontpage */
+
+.ArticleElement{
+    display: grid;
+
+    grid-template:
+            "listicon headline categoryname likescount      likesicon" 10vh
+            "listicon headline datename     commentscount   commentsicon" 10vh;
+    grid-template-columns: 10vw auto 7em 2em 2em;
+    border: solid black;
+}
+.listicon{
+    grid-area: listicon;
+    height: 18vh;
+}
+.headline{
+    grid-area: headline;
+}
+.categoryname{
+    grid-area: categoryname;
+}
+.datename{
+    grid-area: datename;
+}
+.likescount{
+    display: grid;
+    grid-area: likescount;
+    grid-template-columns: 2;
+}
+.commentscount{
+    display: grid;
+    grid-area: commentscount;
+    grid-template-columns: 2;
+}
+.likeicon{
+    grid-area: likesicon;
+    height: 2em;
+    width: 2em;
+}
+.commenticon{
+    grid-area: commentsicon;
+    height: 2em;
+    width: 2em;
+}
+.headline{
+    font-size: 2em;
+}
+
+/* frontpage */

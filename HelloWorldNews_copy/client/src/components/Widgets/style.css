@@ -1,0 +1,15 @@
+.card{
+
+}
+
+.card_img{
+    max-width: 100%;
+    height: inherit;
+}
+
+.pageButtons input {
+    margin: 0.2em;
+    width: auto;
+    min-width: 3em;
+    min-height: 2em;
+}

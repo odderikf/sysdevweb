@@ -1,0 +1,11 @@
+{
+  "name": "helloworldnews-prototype",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.16.4",
+    "babel-cli": "^6.26.0"
+  },
+  "scripts": {
+    "start": "echo 'http://localhost:8081/index.html';babel-node src/index.js;"
+  }
+}

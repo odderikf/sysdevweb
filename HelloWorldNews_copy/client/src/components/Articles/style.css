@@ -1,0 +1,59 @@
+.article_list {
+    max-width: 900px;
+}
+.article_element {
+    border-color: #7f7f7f;
+}
+.article_element th{
+    width: auto;
+}
+
+.article_img img{
+    min-height: 7em;
+    min-width: 7em;
+    max-height: 9em;
+    max-width: 9em;
+    border: solid #999999 1px ;
+    border-radius: 1em;
+}
+
+.article_title {
+    font-size: 180%;
+    padding-left: 0.5em;
+    max-width: 60em;
+    padding-top: 1em;
+    padding-right: 0.5em;
+}
+
+.article_category{
+    font-size: 140%;
+}
+
+.article_date{
+
+}
+
+.article_upvotes{
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.empty_list_notice{
+    text-align: center;
+    width: 100%;
+    font-size: 2.4em;
+    font-style: oblique;
+}
+
+.flexrow1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flexrow2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}

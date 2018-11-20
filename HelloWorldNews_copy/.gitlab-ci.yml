@@ -1,0 +1,95 @@
+image: node:8
+
+services:
+- mysql:5.5
+
+variables:
+    MYSQL_DATABASE: HelloWorldNewsTest
+    MYSQL_ROOT_PASSWORD: HelloWorldNewsRoot
+
+stages:
+- install
+- build
+- test
+- deploy
+
+npm_install_server:
+    stage: install
+    script:
+    - cd server
+    - npm install
+    artifacts:
+        paths:
+        - server/node_modules
+
+npm_install_client:
+    stage: install
+    script:
+    - cd client
+    - npm install
+    artifacts:
+        paths:
+        - client/node_modules
+
+
+config_copy:
+    stage: build
+    script:
+    - cd server
+    - cp gitlab.config.mine.js config.mine.js
+    artifacts:
+        paths:
+        - server/config.mine.js
+
+npm_build_client:
+    stage: build
+    dependencies:
+    - npm_install_client
+    script:
+    - cd client
+    - npm run build
+    artifacts:
+        paths:
+        - client/public/bundle.js
+
+run_server_tests:
+    stage: test
+    dependencies:
+    - npm_install_server
+    - config_copy
+    script:
+    - cd server
+    - npm test
+    artifacts:
+        paths:
+        - server/coverage/
+
+run_client_tests:
+    stage: test
+    dependencies:
+    - npm_install_client
+
+    script:
+    - cd client
+    - npm test
+    artifacts:
+        paths:
+        - client/coverage/
+
+pages:
+    stage: deploy
+    dependencies:
+    - run_server_tests
+    - run_client_tests
+    script:
+    - mkdir .public
+    - mkdir .public/server
+    - cp -r server/coverage/* .public/server
+    - mkdir .public/client
+    - cp -r client/coverage/* .public/client
+    - mv .public public
+    artifacts:
+        paths:
+        - public
+    only:
+    - master

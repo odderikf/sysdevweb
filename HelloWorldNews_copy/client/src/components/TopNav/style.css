@@ -1,0 +1,70 @@
+@media (min-width: 1400px){
+    .TopNav{
+        position:sticky;
+        position: -webkit-sticky;
+    }
+}
+.TopNav{
+    width: 100%;
+    min-height: 7vh;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: #353dff;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    columns: fit-content;
+
+}
+
+.NavLink {
+    margin: 0;
+    padding-top: 0.2em;
+    padding-bottom: 2%;
+    overflow: hidden;
+    line-height: inherit;
+    font-size: 180%;
+    font-family: "Gill Sans", sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    flex-grow: 9;
+    min-width: 4em;
+    border-bottom: 5px solid transparent;
+}
+@media (max-width: 1400px) {
+    .NavLink {
+        font-size: 1.4em;
+    }
+}
+
+.NavLink:hover {
+    border-bottom-color: white;
+    color: white;
+    text-decoration: none;
+}
+
+.NavLink.active {
+    color: white;
+    background-color: #4444FF;
+}
+
+.NavLink #sitetitle {
+    width: auto;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 150%;
+    float:left;
+    text-wrap: none;
+    flex-grow: 10;
+    min-width: 10em;
+}
+
+.NavLink:hover #sitetitle {
+    background-color: white;
+    color: #0000FF;
+}

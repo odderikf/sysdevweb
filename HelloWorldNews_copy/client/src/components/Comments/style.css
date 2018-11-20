@@ -1,0 +1,42 @@
+.comments{
+
+}
+
+.commentList{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+}
+
+.nick{
+    background-color: #ddd;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0.2em;
+
+
+}
+
+.content{
+    background-color: #eee;
+    width: 100%;
+    min-height: 2.5em;
+    padding-top: 1.5em;
+    vertical-align: text-bottom;
+}
+
+.pageButtons{
+    margin: 1em;
+    display: flex;
+    justify-content: stretch;
+}
+
+.comment *{
+    padding-top: 0.1em;
+    padding-left: 0.3em;
+}
+
+.feedbacklabel{
+    color: green;
+}

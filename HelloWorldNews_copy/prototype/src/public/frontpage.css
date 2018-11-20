@@ -1,0 +1,45 @@
+.ArticleElement{
+    display: grid;
+
+    grid-template:
+                "listicon headline categoryname likescount      likesicon" 10vh
+                "listicon headline datename     commentscount   commentsicon" 10vh;
+    grid-template-columns: 10vw auto 7em 2em 2em;
+    border: solid black;
+}
+.listicon{
+    grid-area: listicon;
+    height: 18vh;
+}
+.headline{
+    grid-area: headline;
+}
+.categoryname{
+    grid-area: categoryname;
+}
+.datename{
+    grid-area: datename;
+}
+.likescount{
+    display: grid;
+    grid-area: likescount;
+    grid-template-columns: 2;
+}
+.commentscount{
+    display: grid;
+    grid-area: commentscount;
+    grid-template-columns: 2;
+}
+.likeicon{
+    grid-area: likesicon;
+    height: 2em;
+    width: 2em;
+}
+.commenticon{
+    grid-area: commentsicon;
+    height: 2em;
+    width: 2em;
+}
+.headline{
+    font-size: 2em;
+}

@@ -1,0 +1,34 @@
+.EditArticle{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.header{
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.radiogroup{
+    display: flex;
+    flex-direction: column;
+}
+.radio{
+    margin-right: 1.2em;
+    transform: scale(1.5)
+}
+
+.bread{
+    min-width: 60em;
+    min-height: 50em;
+}
+
+.checkbox{
+    margin-left: 2em;
+    align-self: center;
+    vertical-align: baseline;
+    text-align: center;
+    transform: scale(2);
+}

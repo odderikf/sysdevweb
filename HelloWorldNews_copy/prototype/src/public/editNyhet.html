@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="utf-8" />
+	<title> Legg til artikkel</title>
+	<meta name="description" content="legg til ny artikkel">
+	<link rel="stylesheet" type="text/css" href="Stylesheet.css" media="screen" />
+</head>
+<body>
+  <div class='root'>
+
+      <div class="TopNav">
+          <ul>
+              <!--<li id="logo"> <a class="active" href="index.html"> <img id="logobildet" src="logo.png" alt='til hovedsiden' ></a></li>-->
+              <li class="topnavtitle"> <a id="sidenavn" href="index.html">HELLO WORLD NEWS</a></li>
+              <li> <a href="nyNyhet.html" > Ny nyhet </a></li>
+              <li> <a href="index.html"> kategori 1 </a></li>
+              <li> <a href="index.html" > kategori 2 </a></li>
+              <li> <a href="index.html" > kategori 3 </a></li>
+          </ul>
+      </div>
+      <h1> Rediger nyhetsartikkel </h1>
+      <form type='GET' action='index.html'>
+        <p> Artikkel tittel <input type='text' name='tittel'> </p>
+        <p> BildeUrl <input type='url' name='BildeUrl'></p>
+        <p> Beskrivelse av bildet <input type='text' name='bildeBeskrivelse'></p>
+        <p> velg kategori </br><input type='radio' name=kategori[] value='Javascript'> Javascript </br>
+            <input type='radio' name='kategori[]' value='Java'> Java </br>
+            <input type='radio' name='kategori[]' value='Matlaging'> Matlaging
+        </p>
+        <p> Artikkel innhold: </p>
+        <textarea rows='8' cols='200' name='innhold' placeholder="skriv inn innhold"></textarea>
+        <p> viktighet: <input type='radio' name='viktighet[]' key='viktig' checked> Viktig
+          <input type='radio' name='viktighet[]' key='uviktig'> Uviktig
+        </p>
+        <input type='submit' value='lagre'>
+        <input type='submit' value='slett artikkel'>
+      </form>
+    </div>
+
+  </div>
+</body>
